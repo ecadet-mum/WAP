@@ -1,9 +1,54 @@
 body{
-	background-color: grey;
+	background-color: lightgrey;
+    max-width: 600px;
+    margin: auto;
+}
+
+p::first-letter{
+    font-size: 2em;
 }
 
 
+
+h1{
+    font: italic bold 30px "Courier New";
+    color: blue;
+}
+
+h2{
+    color: darkblue;
+}
+
+#jovial{
+    color: darkorange;
+    font : italic bold 14px Verdana;
+}
+#nice{
+    color : green;
+    font : italic bold 14px Tahoma;
+}
+
 div {
 	display : inline;
-	border-left-color : red; 
+	border-left-color : red;
+}
+
+a:link {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+
+a:active{
+    color: green;
+    text-decoration: underline;
 }
