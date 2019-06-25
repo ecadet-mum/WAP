@@ -1,12 +1,9 @@
 body{
-	--background-color: grey;
+	background-color: grey;
 }
 
-div~p{
-	background-color: blue;
-}
 
-.inlineDiv {
+div {
 	display : inline;
 	border-left-color : red; 
 }
