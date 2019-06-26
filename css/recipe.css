@@ -62,3 +62,8 @@ a:link{
 blockquote{
     background-color: #eeffa0;
 }
+
+pre{
+    display: inline-block;
+    text-align: right;
+}
