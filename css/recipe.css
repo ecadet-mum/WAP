@@ -54,3 +54,11 @@ a:link{
     display: inline-block;
 
 }
+
+#cakeId{
+    text-decoration:line-through
+}
+
+p{
+    background-color: #eeffa0;
+}
