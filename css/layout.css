@@ -1,0 +1,42 @@
+body{
+    background-image: url("../images/victoria/background.gif");
+}
+.mainDiv{
+    border-radius: 15px;
+    border: 4px solid #C2E9E9;
+    margin: auto 10%;
+    background-color: white;
+
+}
+
+.headerDiv{
+    --border: 5px solid red;
+    background-color: #A8F0F0;
+    text-align: right;
+}
+
+#h2Fresh{
+    --border: 5px solid orange;
+    font-size: 14pt;
+}
+
+.middle1{
+    border-radius: 15px;
+    border: 4px solid #C2E9E9;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+div span{
+    border-bottom: 2px dashed blue;
+}
+
+img{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+div{
+    overflow: auto;
+}
