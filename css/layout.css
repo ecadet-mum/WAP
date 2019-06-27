@@ -1,9 +1,9 @@
 body{
-    background-image: url("../images/victoria/background.gif");
+    --background-image: url("../images/victoria/background.gif");
 }
 .mainDiv{
-    border-radius: 15px;
-    border: 4px solid #C2E9E9;
+    --border-radius: 15px;
+    --border: 4px solid #C2E9E9;
     margin: auto 10%;
     background-color: white;
 
