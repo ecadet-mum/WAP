@@ -1,3 +1,20 @@
+.centerDiv{
+    position: relative;
+    width: 660px;
+    margin: auto;
+    --text-align: center;
+}
+
+
+
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 630px;
+    margin-left: 0px;
+
+}
+
 header{
     margin-top:20px;
     margin-bottom: 20px;
@@ -9,7 +26,7 @@ header{
 div{
     margin-top:15px;
 }
-div input[type="text"],select{
+div input[type="text"],select,input[type="email"]{
     margin-bottom:5px;
     width: 300px;
     height: 25px;
@@ -20,4 +37,30 @@ input[type="submit"]{
     height: 25px;
     color: blue;
     font-weight: bold;
+}
+
+.divInline{
+    float: left;
+    margin-right: 20px;
+    --background-color: blue;
+    width: 310px;
+    --display: inline;
+}
+
+.divInline2{
+    --background-color: green;
+    margin-right: 20px;
+    display: inline-block;
+}
+.divClearLeft{
+    clear: both;
+}
+
+.divSpecificSize{
+    width: 630px;
+}
+.divCenter{
+    width: 630px;
+    margin-bottom: 100px;
+    text-align: center;
 }

@@ -6,30 +6,34 @@
     <title>Title</title>
 </head>
 <body>
+<div class="centerDiv">
 <form action="">
-<section>
+
+<section >
     <header>Personal Information</header>
-    <div>
-        <div>First Name</div>
+    <div class="divInline">
+        <div >First Name</div>
         <div><input type="text" name="firstName" required/></div>
     </div>
-    <div>
+    <div class="divInline">
         <div>Last Name</div>
         <div><input type="text" name="lastName"required/></div>
     </div>
-    <div>
-        <div>Date of Birth</div>
-        <div><input type="text" name="birthDate" maxlength="10" placeholder="MM/DD/YYYY" pattern="\d{2}\/\d{2}\/\d{4}$" title="Must be like 07/17/1600" required/></div>
+    <div class="divClearLeft">
+        <div class="divInline2">
+            <div>Date of Birth</div>
+            <div><input type="text" name="birthDate" maxlength="10" placeholder="MM/DD/YYYY" pattern="\d{2}\/\d{2}\/\d{4}$" title="Must be like 07/17/1600" required/></div>
+        </div >
+        <div class="divInline2">
+            <div>Mother’s Maiden Name</div>
+            <div><input type="text" name="motherName"/></div>
+        </div>
     </div>
-    <div>
-        <div>Mother’s Maiden Name</div>
-        <div><input type="text" name="motherName"/></div>
-    </div>
-    <div>
+    <div class="divInline">
         <div>Social Insurance Number(Optional)</div>
         <div><input type="text" name="firstName" placeholder="000-000-000" pattern="\d{3}-\d{3}-\d{3}" title="Format should be like this : 111-222-302" required/></div>
     </div>
-    <div>
+    <div class="divInline">
         <div>How did you learn about this card? (Optional)</div>
         <div>
             <select>
@@ -41,33 +45,36 @@
             </select>
         </div>
     </div>
-</section>
+    <div class="divClearLeft"></div>
+</section >
 <hr/>
 <section>
 <header>Contact Information</header>
 
-<div>
+<div class="divInline">
     <div>Home Address (No P.O. Boxes)</div>
     <div><input type="text" name="homeAddress" required/></div>
 </div>
-<div>
+<div class="divInline">
     <div>Suite/Apt. # (if Applicable)</div>
     <div><input type="text" name="suiteApt"/></div>
 </div>
 <!---email--->
-<div>
-    <div>Email Address</div>
-    <div><input type="email" name="emailAddress" required/></div>
-</div>
-<div>
-    <div>Primary Phone Number</div>
-    <div><input type="text" name="phoneNumber" placeholder="000 000-0000" pattern="^\d{3} \d{3}-\d{4}$"/></div>
+<div class="divClearLeft">
+    <div class="divInline2">
+        <div>Email Address</div>
+        <div><input type="email" name="emailAddress" required/></div>
+    </div>
+    <div class="divInline2">
+        <div>Primary Phone Number</div>
+        <div><input type="text" name="phoneNumber" placeholder="000 000-0000" pattern="^\d{3} \d{3}-\d{4}$"/></div>
+    </div>
 </div>
 </section>
 <hr/>
 <section>
     <header>Authorized User</header>
-    <div>
+    <div class="divSpecificSize">
         <label>
             <input type="checkbox" name="authorizedUser"/>
             Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.</label>
@@ -103,32 +110,36 @@
             <label><input type="radio" name="financialOpt"/>Other</label>
         </div>
     </div>
-    <div>
+    <div class="divInline">
         <div>Your Annual Income (Before Taxes)</div>
         <div>
             <input type="text" name="annualBonus" placeholder="$100,000" pattern="^\$[1-9]\d{2},\d{3}$" title="Must start with $ sign and must be a valid number"required/>
         </div>
     </div>
-    <div>
+
+    <div class="divInline">
         <div>Other Household Income (Before Taxes)</div>
         <div>
             <input type="text" name="houseIncome" placeholder="$100,000" pattern="^\$[1-9]\d{2},\d{3}$" title="Must start with $ sign and must be a valid number"required/>
         </div>
     </div>
-    <div>
+ <div class="divClearLeft">
+    <div class="divInline2">
         <div>Do you have a mortgage? (Optional)</div>
         <div>
             <label><input type="radio" name="financialOpt"/>Yes</label>
             <label><input type="radio" name="financialOpt"/>No</label>
         </div>
     </div>
-    <div>
+
+    <div class="divInline2">
         <div>Monthly Rent/Mortgage (Optional)</div>
         <div>
             <input type="text" name="monthlyRent" placeholder="$100,000" pattern="^\$[1-9]\d{2},\d{3}$" title="Must start with $ sign and must be a valid number"required/>
         </div>
     </div>
-    <div>
+ </div>
+    <div class="divInline">
         <div>Do you have any bank accounts?</div>
         <div>
             <select name="employeeStatus" required>
@@ -139,27 +150,30 @@
             </select>
         </div>
     </div>
-    <div>
-        <div>Would you like to use your card for cash advances? (Optional)</div>
+    <div class="divInline">
+
+        <div >Would you like to use your card for cash advances? (Optional)</div>
         <div>
             <label><input type="radio" name="cashAdvance"/>Yes</label>
             <label><input type="radio" name="cashAdvance"/>No</label>
         </div>
     </div>
 </section>
+ <div class="divClearLeft"></div>
 <hr/>
 <section>
-<div>
+<div class="divSpecificSize">
 <label>By selecting “Review My Application”, you confirm that you have read, understood and agree to the above Important Disclosures.</label>
 </div>
 </section>
 <section>
-    <div>
+    <div class="divCenter">
         <input type="submit" value="Review My Application"/>
 
     </div>
 </section>
 
 </form>
+</div>
 </body>
 </html>
