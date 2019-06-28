@@ -2,7 +2,9 @@
     position: relative;
     width: 660px;
     margin: auto;
+    padding-left: 20px;
     --text-align: center;
+    border: 1px solid lightgray ;
 }
 
 
@@ -21,6 +23,7 @@ header{
     font-size: 20pt;
     color: midnightblue;
     font-weight: bold;
+    text-align: center;
 }
 
 div{
