@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/capitalOne.css" type="text/css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+<section>
+    <header>Personal Information</header>
+    <div>
+        <div>First Name</div>
+        <div><input type="text" name="firstName" required/></div>
+    </div>
+    <div>
+        <div>Last Name</div>
+        <div><input type="text" name="lastName"required/></div>
+    </div>
+    <div>
+        <div>Date of Birth</div>
+        <div><input type="text" name="birthDate" maxlength="10" placeholder="MM/DD/YYYY" pattern="\d{2}\/\d{2}\/\d{4}$" title="Must be like 07/17/1600" required/></div>
+    </div>
+    <div>
+        <div>Mother’s Maiden Name</div>
+        <div><input type="text" name="motherName"/></div>
+    </div>
+    <div>
+        <div>Social Insurance Number(Optional)</div>
+        <div><input type="text" name="firstName" placeholder="000-000-000" pattern="\d{3}-\d{3}-\d{3}" title="Format should be like this : 111-222-302" required/></div>
+    </div>
+    <div>
+        <div>How did you learn about this card? (Optional)</div>
+        <div>
+            <select>
+                <option>Select source</option>
+                <option>Magazine</option>
+                <option>Family or friend</option>
+                <option>Mail offer</option>
+                <option>Television</option>
+            </select>
+        </div>
+    </div>
+</section>
+<hr/>
+<section>
+<header>Contact Information</header>
+
+<div>
+    <div>Home Address (No P.O. Boxes)</div>
+    <div><input type="text" name="homeAddress" required/></div>
+</div>
+<div>
+    <div>Suite/Apt. # (if Applicable)</div>
+    <div><input type="text" name="suiteApt"/></div>
+</div>
+<!---email--->
+<div>
+    <div>Email Address</div>
+    <div><input type="email" name="emailAddress" required/></div>
+</div>
+<div>
+    <div>Primary Phone Number</div>
+    <div><input type="text" name="phoneNumber" placeholder="000 000-0000" pattern="^\d{3} \d{3}-\d{4}$"/></div>
+</div>
+</section>
+<hr/>
+<section>
+    <header>Authorized User</header>
+    <div>
+        <label>
+            <input type="checkbox" name="authorizedUser"/>
+            Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.</label>
+    </div>
+
+</section>
+<hr/>
+<section>
+    <header>Employment Information</header>
+    <div>
+        <div>Employment Status</div>
+        <div>
+            <select name="employeeStatus" required>
+                <option>Select status</option>
+                <option>Employed</option>
+                <option>Self-Employed</option>
+                <option>Retired</option>
+                <option>Student</option>
+                <option>Unemployed</option>
+            </select>
+        </div>
+    </div>
+</section>
+<hr/>
+<section>
+    <header>Financial Information</header>
+    <div>
+        <div>Do you: (Optional)</div>
+        <div>
+            <label><input type="radio" name="financialOpt"/>Own</label>
+            <label><input type="radio" name="financialOpt"/>Rent</label>
+            <label><input type="radio" name="financialOpt"/>Live with parents</label>
+            <label><input type="radio" name="financialOpt"/>Other</label>
+        </div>
+    </div>
+    <div>
+        <div>Your Annual Income (Before Taxes)</div>
+        <div>
+            <input type="text" name="annualBonus" placeholder="$100,000" pattern="^\$[1-9]\d{2},\d{3}$" title="Must start with $ sign and must be a valid number"required/>
+        </div>
+    </div>
+    <div>
+        <div>Other Household Income (Before Taxes)</div>
+        <div>
+            <input type="text" name="houseIncome" placeholder="$100,000" pattern="^\$[1-9]\d{2},\d{3}$" title="Must start with $ sign and must be a valid number"required/>
+        </div>
+    </div>
+    <div>
+        <div>Do you have a mortgage? (Optional)</div>
+        <div>
+            <label><input type="radio" name="financialOpt"/>Yes</label>
+            <label><input type="radio" name="financialOpt"/>No</label>
+        </div>
+    </div>
+    <div>
+        <div>Monthly Rent/Mortgage (Optional)</div>
+        <div>
+            <input type="text" name="monthlyRent" placeholder="$100,000" pattern="^\$[1-9]\d{2},\d{3}$" title="Must start with $ sign and must be a valid number"required/>
+        </div>
+    </div>
+    <div>
+        <div>Do you have any bank accounts?</div>
+        <div>
+            <select name="employeeStatus" required>
+            <option>Checking and Savings</option>
+            <option>Checking only</option>
+            <option>Savings only</option>
+            <option>Neither</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <div>Would you like to use your card for cash advances? (Optional)</div>
+        <div>
+            <label><input type="radio" name="cashAdvance"/>Yes</label>
+            <label><input type="radio" name="cashAdvance"/>No</label>
+        </div>
+    </div>
+</section>
+<hr/>
+<section>
+<div>
+<label>By selecting “Review My Application”, you confirm that you have read, understood and agree to the above Important Disclosures.</label>
+</div>
+</section>
+<section>
+    <div>
+        <input type="submit" value="Review My Application"/>
+
+    </div>
+</section>
+
+</form>
+</body>
+</html>
